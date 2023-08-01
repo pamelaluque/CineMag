@@ -120,7 +120,8 @@ body {
 
 button,
 input[type="submit"],
-input[type="button"]{
+input[type="button"],
+.editForm input[type="submit"]{
     width: 100px;
     height: 35px;
     background: #ff1d56c4;
@@ -141,13 +142,30 @@ input[type="button"]{
   margin-right: 7px;
 }
 
-.edit:hover{
+.edit:hover,
+.editForm input[type="submit"]:hover{
     background:rgba(255, 68, 0, 0.712);
+}
+
+.editForm input[type="text"],
+.editForm textarea{
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    background:#dedfe0;
+    color: #454545;
+    width: 80%;
+    opacity:4;
+    outline: 0;
+    border-color: transparent;
 }
 
 .delete:hover{
     background: rgba(233, 16, 16, 0.623);
 }
+
 
 /* Estilos barra lateral */
 
@@ -183,6 +201,10 @@ input[type="button"]{
     opacity:4;
     outline: 0;
     border-color: transparent;
+}
+
+.noFinded{
+  color: red;
 }
 
 /* Estilos pie de página */
